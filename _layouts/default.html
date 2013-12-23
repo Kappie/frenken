@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/skeleton1200.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">    
+<!--     <link rel="stylesheet" href="assets/css/frenken.css"> -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
 
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
+    <div class="container">
+      <div id="left-column" class="eight columns omega clearfix">
+        <div class="two columns alpha">
+          <ul class="nav nav-stacked">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallerie</a></li>
+            <li><a href="#">Werk</a></li>
+            <li><a href="#">Actueel</a></li>
+            <li><a href="#">Galeries</a></li>
+          </ul>
         </div>
+        <div class="six columns omega">
+          {{ content }}
+        </div>
+      </div>
+      <div id="right-column" class="eight columns alpha clearfix">
+        <img src="assets/images/frenken.png" id="frenken">
+      </div>
+    </div>
 
-    </body>
+  
+
+  </body>
 </html>
